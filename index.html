@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+    <h1>checking the even odd</h1>
+    <form onSubmit="findEvenOdd(); return false">
+        Enter a Number:
+
+        <input type="number" name="num" id="num" min="0">
+
+        <br>
+        <button type="submit " onclick="findEvenOdd">find</button>
+    </form>
+    <h3 id="result"> </h3>
+
+    <script>
+        function findEvenOdd() {
+            let num = document.getElementById("num").value
+
+
+            if (num % 2 === 0) {
+                document.getElementById("result").innerHTML = num + "    is Even Number";
+            } else {
+                document.getElementById("result").innerHTML = num + "    is Odd Number";
+            }
+        }
+    </script>
+</body>
+
+</html>
